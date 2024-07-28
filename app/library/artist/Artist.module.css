@@ -1,0 +1,23 @@
+.artist {
+    padding: 16px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.artist h1 {
+    margin-bottom: 12px;
+}
+.artist ul {
+    list-style: none;
+}
+.artist li {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #161616;
+    border-radius: 8px;
+}
+@media (min-width: 480px) {
+    .artist {
+        display: none;
+    }
+}

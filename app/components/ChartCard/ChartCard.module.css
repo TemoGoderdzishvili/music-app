@@ -1,0 +1,24 @@
+.card {
+    width: 184px;
+    height: 236px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #161616;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.banner {
+    border-radius: 16px;
+}
+.title {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}

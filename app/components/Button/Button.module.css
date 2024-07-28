@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+.button {
+    width: 252px;
+    height: 48px;
+    border-radius: 50px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    padding: 14px 77px 15px 78px;
+}
+.button:hover {
+    background-color: #232323;
+}
+.filled {
+    color: #FFFFFF;
+    background-color:#0F0F0F;
+    white-space: nowrap;
+}
+.textOnly {
+    color: #FFFFFF;
+    background-color:#0F0F0F;
+    white-space: nowrap;
+}

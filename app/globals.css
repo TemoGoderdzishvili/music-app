@@ -3,6 +3,9 @@ body {
   font-family: Inter, sans-serif;
   background-color: #0F0F0F;
 }
+a {
+  text-decoration: none;
+}
 .viewPlaylistDiv {
   display: flex;
   justify-content: center;
@@ -12,22 +15,34 @@ body {
   padding: 0;
 }
 .chartCardDiv {
-  width: 796pxpx;
-  height: 276pxpx;
-  margin-top: 24px;
+  width: 796px;
+  height: 276px;
+  gap: 16px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #121212;
+}
+.topChartDiv {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .topCharts {
   width: 106px;
   height: 24px;
-  gap: 14.28px;
-  opacity: 0px;
   color: #FFFFFF;
   font-family: Inter;
   font-size: 20px;
   font-weight: 500;
   line-height: 24.2px;
-  margin-left: 16px;
+}
+.chartHitsDiv {
+  width: 100%;
+  height: 236px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import React from "react";
 import Button from "./components/Button/Button";
-import ChartCard from './components/ChartCard/ChartCard';
+import ChartCard from "./components/ChartCard/ChartCard";
 
 export default function Home() {
   const handleCardClick = (title: string) => {
@@ -14,8 +14,11 @@ export default function Home() {
         <Button initialText="View playlist" filledText={styles.filledText} textOnlyText="View playlist" />
       </div>
       <div className="chartCardDiv">
-        <h2 className="topCharts">Top Charts</h2>
-        <div style={{ display: 'flex', gap: '20px' }}>
+        <div className="topChartDiv">
+          <a href="/" className="topCharts">Top Charts</a>
+          <a href="#">See all</a>
+        </div>
+        <div className="chartHitsDiv" style={{ display: 'flex', gap: '20px' }}>
           <ChartCard
             bannerSrc="/images/Top-Hits-2024.jpg"
             title="Top hits 2024"

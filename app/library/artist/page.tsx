@@ -6,11 +6,11 @@ const Artist = () => {
     <div className={styles.artist}>
       <h1>Artist</h1>
       <ul>
-        <li><img src="../../public/images/Coldplay.svg" /> Coldplay</li>
-        <li><img src="../../public/images/Sia.svg" /> Sia</li>
-        <li><img src="../../public/images/HarryStyles.svg" /> Harry Styles</li>
-        <li><img src="../../public/images/Rihanna.svg" /> Rihanna</li>
-        <li><img src="../../public/images/TheBeatles.svg" /> The Beatles</li>
+        <li><img src="../../images/Coldplay.svg" /> Coldplay</li>
+        <li><img src="../../images/Sia.svg" /> Sia</li>
+        <li><img src="../../images/HarryStyles.svg" /> Harry Styles</li>
+        <li><img src="../../images/Rihanna.svg" /> Rihanna</li>
+        <li><img src="../../images/TheBeatles.svg" /> The Beatles</li>
       </ul>
     </div>
   );

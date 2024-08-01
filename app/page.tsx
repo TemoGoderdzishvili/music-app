@@ -1,21 +1,41 @@
-'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
-import React from "react";
-import Button from "./components/Button/Button";
-import ChartCard from './components/ChartCard/ChartCard';
+<<<<<<< Updated upstream
 
 export default function Home() {
-  const handleCardClick = (title: string) => {
+  return (
+    <>
+=======
+import React, { useState } from "react";
+import Button from "./components/Button/Button";
+import ChartCard from "./components/ChartCard/ChartCard";
+import PlayerController from "./components/PlayerController/PlayerController";
+
+export default function Home() {
+  const handleCardClick = (title: string) => {};
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showVisuals, setShowVisuals] = useState(true);
+  const track = {
+    title: 'Imagine Dragons - Believer',
+    artist: 'Imagine Dragons',
+    cover: '/images/ImagineDragons.png',
+    duration: 180,
   };
+  const handlePlayPause = () => setIsPlaying(!isPlaying);
+  const handleNext = () => {};
+  const handlePrevious = () => {};
+  const handleToggleVisuals = () => setShowVisuals(!showVisuals);
   return (
     <>
       <div className="viewPlaylistDiv">
         <Button initialText="View playlist" filledText={styles.filledText} textOnlyText="View playlist" />
       </div>
       <div className="chartCardDiv">
-        <h2 className="topCharts">Top Charts</h2>
-        <div style={{ display: 'flex', gap: '20px' }}>
+        <div className="topChartDiv">
+          <a href="/" className="topCharts">Top Charts</a>
+          <a href="#">See all</a>
+        </div>
+        <div className="chartHitsDiv" style={{ display: 'flex', gap: '20px' }}>
           <ChartCard
             bannerSrc="/images/Top-Hits-2024.jpg"
             title="Top hits 2024"
@@ -38,6 +58,18 @@ export default function Home() {
           />
         </div>
       </div>
+      <div>
+        <PlayerController
+          track={track}
+          isPlaying={isPlaying}
+          onPlayPause={handlePlayPause}
+          onNext={handleNext}
+          onPrevious={handlePrevious}
+          onToggleVisuals={handleToggleVisuals}
+          showVisuals={showVisuals}
+        />
+      </div>
+>>>>>>> Stashed changes
     </>
   );
 }

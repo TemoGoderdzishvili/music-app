@@ -1,33 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 body {
-  font-family: Inter, sans-serif;
-  background-color: #0F0F0F;
-}
-.viewPlaylistDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.chartCardDiv {
-  width: 796pxpx;
-  height: 276pxpx;
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-.topCharts {
-  width: 106px;
-  height: 24px;
-  gap: 14.28px;
-  opacity: 0px;
-  color: #FFFFFF;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24.2px;
-  margin-left: 16px;
+  font-family: 'Inter', sans-serif;
 }
